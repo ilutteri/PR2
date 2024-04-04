@@ -5,3 +5,4 @@ Espacio dedicado para subir contenido correspondiente a la materia / Trabajos pr
 ## Autores 
 - [@Anibal Montalti](https://www.github.com/AnibalMontalti)
 - [@Ignacio Lutteri](https://www.github.com/ilutteri)
+- [@Simon Leybovich](https://www.github.com/simonleybovich)
