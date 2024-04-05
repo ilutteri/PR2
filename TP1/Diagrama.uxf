@@ -1,0 +1,74 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><element><id>UMLClass</id><coordinates><x>490</x><y>210</y><w>112</w><h>56</h></coordinates><panel_attributes>Complejo
+-
+-nombre: String
+-
++comprarEntrada():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>476</x><y>329</y><w>140</w><h>63</h></coordinates><panel_attributes>Cine
+-
+-nombre:String
+-
++agregarSala():void
++eliminarSala():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>539</x><y>385</y><w>42</w><h>63</h></coordinates><panel_attributes>lt=&lt;-
+-sala[]</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>539</x><y>259</y><w>42</w><h>84</h></coordinates><panel_attributes>lt=&lt;-
+-cine[]</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>427</x><y>434</y><w>294</w><h>98</h></coordinates><panel_attributes>Sala
+-
+-numero:int
+-almohadones:int
+-
++ Sala(int)
++ agregarFuncion(Date, DateTime, Pelicula, int): Resultado
++ modificarFuncion(Date, DateTime, Pelicula, int): Resultado
++ cancelarFuncion(): Resultado</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>203</x><y>434</y><w>119</w><h>84</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Resultado
+-
++ OK
++ YA_EXISTE
++ NO_PUDO_AGREGARSE
++ ERROR</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>315</x><y>469</y><w>126</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+-resultado</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>819</x><y>455</y><w>182</w><h>112</h></coordinates><panel_attributes>Funcion
+-
+- fecha: Date
+- hora: DateTime
+- cantEntradas: int
+-
++ Funcion(Date, DateTime, Pelicula, int)
++ salaLlena(): boolean
++ cambiarPelicula(Pelicula): void
++ modificarFecha(Date): void
++ modificarHorario(DateTime): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>714</x><y>469</y><w>119</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+-funcion[]</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>826</x><y>350</y><w>196</w><h>70</h></coordinates><panel_attributes>Entrada
+-
+-espectador: Espectador
+-
++ Entrada(Espectador, Asiento, Sala, Funcion)
++ verDatosEntrada(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>651</x><y>364</y><w>189</w><h>84</h></coordinates><panel_attributes>lt=&lt;-
+-sala</panel_attributes><additional_attributes>10;100;10;20;250;20</additional_attributes></element><element><id>Relation</id><coordinates><x>609</x><y>350</y><w>231</w><h>21</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>310;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>882</x><y>413</y><w>56</w><h>56</h></coordinates><panel_attributes>lt=&lt;-
+-funcion</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1092</x><y>343</y><w>168</w><h>84</h></coordinates><panel_attributes>Espectador
+-
+- nombre: String
+- necesitaAlmohadon: boolean
+-
++ tieneEntrada(): boolean
++ comprarEntrada()
++ cancelarEntrada()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>630</y><w>140</w><h>77</h></coordinates><panel_attributes>Pelicula
+-
+- nombre: String
+- genero: String
+- duracion: DateTime
+- categoria: String 
+-
++Pelicula()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>896</x><y>560</y><w>56</w><h>84</h></coordinates><panel_attributes>lt=&lt;-
+-pelicula</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1015</x><y>371</y><w>91</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+-entrada</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>476</x><y>602</y><w>168</w><h>84</h></coordinates><panel_attributes>Asiento
+-
+- estaReservado: boolean
+- numero: int
+-
++ asientoDisponible(): boolean
++ reservar():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>525</y><w>56</w><h>91</h></coordinates><panel_attributes>lt=&lt;-
+-asiento[]</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1141</x><y>210</y><w>84</w><h>63</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoDeCompra
+-
++ PRESENCIAL
++ ONLINE</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1162</x><y>266</y><w>84</w><h>91</h></coordinates><panel_attributes>lt=&lt;-
+-tipoDeCompra</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>546</x><y>413</y><w>490</w><h>364</h></coordinates><panel_attributes>lt=&lt;-
+-asiento</panel_attributes><additional_attributes>10;390;10;500;680;500;680;10</additional_attributes></element></diagram>
