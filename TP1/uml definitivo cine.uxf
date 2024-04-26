@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>477</x><y>31</y><w>315</w><h>72</h></coordinates><panel_attributes>Complejo
+-
+-nombre: String
+-
++comprarEntrada(int,Cine,Funcion):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>459</x><y>157</y><w>207</w><h>108</h></coordinates><panel_attributes>Cine
+-
+-nombre:String
+-
++comprarEntrada(int, Funcion)
++crearEntrada(Asiento, Sala, Funcion)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>9</x><y>310</y><w>378</w><h>144</h></coordinates><panel_attributes>Sala
+-
+-numero:int
+-almohadones:int
+-
++ Sala(int)
++reservar(int):void
++estaLlena():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>477</x><y>310</y><w>234</w><h>108</h></coordinates><panel_attributes>Funcion
+-
+-horario: DateTime
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>909</x><y>211</y><w>252</w><h>90</h></coordinates><panel_attributes>Entrada
+-
++ Entrada( Asiento, Sala, Funcion)
++ verDatosEntrada(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>324</x><y>292</y><w>720</w><h>198</h></coordinates><panel_attributes>lt=&lt;-
+-sala</panel_attributes><additional_attributes>10;180;10;200;780;200;780;10</additional_attributes></element><element><id>Relation</id><coordinates><x>657</x><y>211</y><w>270</w><h>27</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>280;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>702</x><y>292</y><w>306</w><h>108</h></coordinates><panel_attributes>lt=&lt;-
+-funcion</panel_attributes><additional_attributes>10;100;320;100;320;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>247</y><w>180</w><h>99</h></coordinates><panel_attributes>Pelicula
+-
+- nombre: String
+- genero: String
+- duracion: DateTime
+- categoria: String 
+-
++Pelicula()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>459</x><y>535</y><w>216</w><h>108</h></coordinates><panel_attributes>Asiento
+-
+- estaReservado: boolean
+- numero: int
+-
++ asientoDisponible(): boolean
++ reservar(int):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>549</x><y>292</y><w>576</w><h>468</h></coordinates><panel_attributes>lt=&lt;-
+-asiento</panel_attributes><additional_attributes>10;390;10;500;620;500;620;10</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>445</y><w>306</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+-asientos[][]</panel_attributes><additional_attributes>10;10;10;80;320;80;320;100</additional_attributes></element><element><id>Relation</id><coordinates><x>549</x><y>256</y><w>90</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+-funciones[]
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>94</y><w>54</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+-cine</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>648</x><y>265</y><w>90</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+-pelicula</panel_attributes><additional_attributes>10;50;10;20;80;20</additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>211</y><w>180</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+-salas[]
+</panel_attributes><additional_attributes>180;20;10;20;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>373</y><w>117</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+-sala</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element></diagram>
