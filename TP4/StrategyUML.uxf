@@ -1,0 +1,24 @@
+<diagram program="umletino" version="15.1"><zoom_level>14</zoom_level><element><id>UMLClass</id><coordinates><x>56</x><y>181</y><w>280</w><h>252</h></coordinates><panel_attributes>Empleado
+-
+-nombre:string
+-apellido:string
+-cantHijos:int
+-diaDeIngreso:int
+-sueldoBrutoAnual:double
+
+-
+-cambiarCategoria(Categorizable)
++calcularSueldoNeto():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>644</x><y>181</y><w>364</w><h>154</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Categorizable
+--
+/+calcularSueldo(Empleado):double/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>224</x><y>489</y><w>392</w><h>168</h></coordinates><panel_attributes>CategoriaA
+--
++calcularSueldo(Empleado):double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>658</x><y>489</y><w>378</w><h>168</h></coordinates><panel_attributes>CategoriaB
+--
++calcularSueldo(Empleado):double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1064</x><y>489</y><w>378</w><h>168</h></coordinates><panel_attributes>CategoriaC
+--
++BONO:int
+--
++calcularSueldo(Empleado):double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>448</x><y>321</y><w>266</w><h>196</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>170;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>826</x><y>321</y><w>42</w><h>196</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>938</x><y>321</y><w>210</w><h>196</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;130;120</additional_attributes></element><element><id>Relation</id><coordinates><x>322</x><y>223</y><w>350</w><h>56</h></coordinates><panel_attributes>lt=&lt;-
+-categoria</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element></diagram>
