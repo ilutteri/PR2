@@ -1,0 +1,43 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>566</x><y>483</y><w>144</w><h>81</h></coordinates><panel_attributes>ProductoCompuesto
+-
+-DESCUENTO: 0.1
+-
++obtenerPrecio():double
++agregar():void
++eliminar():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>224</x><y>375</y><w>144</w><h>72</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Producto
+-
++obtenerPrecio():double
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>242</x><y>96</y><w>135</w><h>72</h></coordinates><panel_attributes>FastFood
+-
++generarPedido()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>359</x><y>438</y><w>243</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;250;10;250;50</additional_attributes></element><element><id>Relation</id><coordinates><x>359</x><y>393</y><w>279</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+-productos[]</panel_attributes><additional_attributes>290;100;290;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>233</x><y>222</y><w>135</w><h>81</h></coordinates><panel_attributes>Pedido
+-
++imprimirTicket()
++cargarProdPedidos()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>359</x><y>294</y><w>360</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;100;380;100;380;10</additional_attributes></element><element><id>Relation</id><coordinates><x>278</x><y>159</y><w>45</w><h>81</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>222</y><w>135</w><h>81</h></coordinates><panel_attributes>Ticket
+--
+-id:long
+-precioTotal:double
+--
++imprimir():void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>656</x><y>222</y><w>135</w><h>81</h></coordinates><panel_attributes>Item
+--
+-cant:int
+-precioTotal:double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>8</x><y>240</y><w>162</w><h>81</h></coordinates><panel_attributes>Note..
+bg=blue
+item 
+1   café   $2000   $2000
+2 papas fritas $3000   $6000
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>566</x><y>249</y><w>108</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
+-items
+m1=1..n</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>359</x><y>240</y><w>99</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
+-ticket
+m1=1</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>359</x><y>276</y><w>99</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>197</x><y>483</y><w>162</w><h>81</h></coordinates><panel_attributes>ProductoIndividual
+--
+-nombre:String
+-precioUnitario: int
+--
++obtenerPrecio()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>305</x><y>438</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element></diagram>
