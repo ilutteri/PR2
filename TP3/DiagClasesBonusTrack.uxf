@@ -1,0 +1,73 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>576</x><y>416</y><w>128</w><h>80</h></coordinates><panel_attributes>ProductoCompuesto
+-
+
+-
++obtenerPrecio():double
++agregar():void
++eliminar():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>272</x><y>320</y><w>128</w><h>64</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Producto
+-
++obtenerPrecio():double
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>288</x><y>72</y><w>120</w><h>64</h></coordinates><panel_attributes>FastFood
+-
++generarPedido()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>376</y><w>216</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;250;10;250;50</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>336</y><w>248</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+-productos[]</panel_attributes><additional_attributes>290;100;290;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>184</y><w>120</w><h>72</h></coordinates><panel_attributes>Pedido
+-
++imprimirTicket()
++cargarProdPedidos()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>248</y><w>320</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;100;380;100;380;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>128</y><w>40</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>464</x><y>184</y><w>120</w><h>72</h></coordinates><panel_attributes>Ticket
+--
+-id:long
+-precioTotal:double
+--
++imprimir():void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>656</x><y>184</y><w>120</w><h>72</h></coordinates><panel_attributes>Item
+--
+-cant:int
+-precioTotal:double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>464</x><y>80</y><w>144</w><h>72</h></coordinates><panel_attributes>Note..
+bg=blue
+item 
+1   café   $2000   $2000
+2 papas fritas $3000   $6000
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>208</y><w>96</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+-items
+m1=1..n</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>200</y><w>88</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+-ticket
+m1=1</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>232</y><w>88</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>248</x><y>416</y><w>144</w><h>72</h></coordinates><panel_attributes>ProductoIndividual
+--
+-nombre:String
+-precioUnitario: int
+--
++obtenerPrecio()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>344</x><y>376</y><w>24</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>816</x><y>432</y><w>160</w><h>56</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IAlgoritmoPrecio
+-
+-
+/+calcularPrecio():double/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1064</x><y>336</y><w>176</w><h>72</h></coordinates><panel_attributes>AlgoritmoPrecioA
+-
+_- DESCUENTO = 0.10_
+-
++calcularPrecio():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1064</x><y>424</y><w>176</w><h>72</h></coordinates><panel_attributes>AlgoritmoPrecioB
+-
+_-VALOR_FIJO:double_
+-
++calcularPrecio():double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1064</x><y>512</y><w>176</w><h>80</h></coordinates><panel_attributes>AlgoritmoPrecioC
+-
+_-DESCUENTO = 0.3_
+_-AUMENTO = 0.2_
+-
++calcularPrecio():double
++getDay():Date</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>696</x><y>440</y><w>136</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
+-algoritmo</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>968</x><y>360</y><w>112</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;130;50;130;50;10;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>968</x><y>456</y><w>112</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>968</x><y>456</y><w>112</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;50;10;50;120;120;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1296</x><y>472</y><w>112</w><h>128</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+DiaDeLaSemana
+-
+_+DOMINGO = 1_
+_+LUNES= 2_
+_+MARTES = 3_
+_+MIERCOLES = 4_
+_+JUEVES = 5_
+_+VIERNES = 6_
+_+SABADO = 7_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1232</x><y>544</y><w>80</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element></diagram>
