@@ -1,42 +1,44 @@
-<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>344</x><y>280</y><w>152</w><h>88</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>64</x><y>136</y><w>152</w><h>88</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
 Command
 -
 
 -
 +execute():void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>952</x><y>384</y><w>192</w><h>104</h></coordinates><panel_attributes>Editor
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>240</y><w>192</w><h>104</h></coordinates><panel_attributes>Editor
 -
 -texto:String
 -
 +escribir(texto):void
 +aplicarCommand(Command):void
-+deshacer():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>152</y><w>152</w><h>72</h></coordinates><panel_attributes>NegritaCommand
+-deshacer():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>8</y><w>152</w><h>72</h></coordinates><panel_attributes>NegritaCommand
 -
 
 -
 +execute():void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>240</y><w>152</w><h>72</h></coordinates><panel_attributes>ItalicaCommand
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>96</y><w>152</w><h>72</h></coordinates><panel_attributes>ItalicaCommand
 -
 
 -
 +execute():void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>328</y><w>152</w><h>72</h></coordinates><panel_attributes>SubrayadoCommand
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>184</y><w>152</w><h>72</h></coordinates><panel_attributes>SubrayadoCommand
 -
 
 -
 +execute():void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>416</y><w>152</w><h>72</h></coordinates><panel_attributes>CambiarTamañoCommand
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>272</y><w>152</w><h>72</h></coordinates><panel_attributes>CambiarTamañoCommand
 -
 
 -
 +execute():void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>488</x><y>176</y><w>176</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;170;100;170;100;10;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>488</x><y>272</y><w>176</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;50;100;50;100;10;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>488</x><y>304</y><w>176</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10;100;80;200;80</additional_attributes></element><element><id>Relation</id><coordinates><x>488</x><y>304</y><w>176</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10;100;190;200;190</additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>512</y><w>152</w><h>72</h></coordinates><panel_attributes>DeshacerCommand
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>32</y><w>176</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;170;100;170;100;10;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>128</y><w>176</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;50;100;50;100;10;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>160</y><w>176</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10;100;80;200;80</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>160</y><w>176</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10;100;190;200;190</additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>368</y><w>152</w><h>72</h></coordinates><panel_attributes>DeshacerCommand
 -
 -
 +execute():void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>488</x><y>304</y><w>176</w><h>264</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10;100;310;200;310</additional_attributes></element><element><id>UMLClass</id><coordinates><x>656</x><y>640</y><w>144</w><h>64</h></coordinates><panel_attributes>PilaDeMovimientos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>160</y><w>176</w><h>264</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10;100;310;200;310</additional_attributes></element><element><id>UMLClass</id><coordinates><x>376</x><y>496</y><w>144</w><h>64</h></coordinates><panel_attributes>PilaDeMovimientos
 -
 
 -
 +push(Command):void
-+pop():Command</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>480</y><w>272</w><h>216</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;250;320;250;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>360</y><w>272</w><h>336</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>320;400;10;400;10;10</additional_attributes></element></diagram>
++pop():Command</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>512</x><y>336</y><w>288</w><h>216</h></coordinates><panel_attributes>lt=&lt;-
+- pilaDeMovimientos</panel_attributes><additional_attributes>10;250;320;250;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>216</y><w>272</w><h>336</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>320;400;10;400;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>536</x><y>376</y><w>184</w><h>32</h></coordinates><panel_attributes>Execute utiliza deshacer de Editor
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>800</x><y>376</y><w>208</w><h>32</h></coordinates><panel_attributes>deshacer hace pop en PilaDeMovimientos</panel_attributes><additional_attributes></additional_attributes></element></diagram>

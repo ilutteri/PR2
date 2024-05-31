@@ -1,0 +1,18 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>750</x><y>370</y><w>100</w><h>30</h></coordinates><panel_attributes>AutoDePlastico</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>250</y><w>140</w><h>70</h></coordinates><panel_attributes>/&lt;&lt; interface &gt;&gt;/
+JugueteDePlastico
+--
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>260</y><w>200</w><h>60</h></coordinates><panel_attributes>/MaquinaDeJuguetes/
+--
+/+ crearJuguete(): JugueteDePlastico/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>920</x><y>370</y><w>100</w><h>30</h></coordinates><panel_attributes>AvionDePlastico
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>310</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;80;60</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>310</y><w>110</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>360</y><w>210</w><h>50</h></coordinates><panel_attributes>MaquinaDeAutos
+--
++ crearJuguete(): JugueteDePlastico</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>360</y><w>220</w><h>50</h></coordinates><panel_attributes>MaquinaDeAviones
+-
++ crearJuguete(): JugueteDePlastico</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>290</y><w>310</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>290;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>310</y><w>160</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>310</y><w>140</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;120;50</additional_attributes></element><element><id>UMLNote</id><coordinates><x>550</x><y>60</y><w>250</w><h>30</h></coordinates><panel_attributes>Diagrama de Clases / Factory Method</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>130</y><w>250</w><h>70</h></coordinates><panel_attributes>Operario
+--
+- asignarMolde(Molde): void
++ crearJuguete(): JugueteDePlastico</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>190</y><w>90</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+- maquina</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>30</x><y>140</y><w>250</w><h>40</h></coordinates><panel_attributes>this.maquina = new MaquinaDeAutos
+this.maquina = new MaquinaDeAviones</panel_attributes><additional_attributes></additional_attributes></element></diagram>
